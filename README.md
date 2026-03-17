@@ -1,17 +1,67 @@
 # PhytoAid
 
-PhytoAid is a rule-based Streamlit application for preliminary plant disease diagnosis. Users choose a crop, affected plant part, and visible symptoms, and the app returns likely diseases with confidence scores, severity estimates, and management guidance.
+[![Live App](https://img.shields.io/badge/Live_App-PhytoAid-red?logo=streamlit&logoColor=white)](https://phytoaid.streamlit.app/)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-alisphd%2Fphytoaid-181717?logo=github)](https://github.com/alisphd/phytoaid)
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 
-## Features
+PhytoAid is a rule-based Streamlit web application for preliminary plant disease diagnosis. Users select a crop, affected plant part, and visible symptoms, and the app returns likely diseases with confidence scores, severity estimates, symptom references, and management guidance.
 
-- Crop selection for citrus, tomato, wheat, rice, maize, sugarcane, and cotton
+This project is designed as a decision-support tool for students, researchers, extension workers, and growers. It does not replace laboratory diagnosis or expert agronomic advice.
+
+## Live Demo
+
+- Live app: [https://phytoaid.streamlit.app/](https://phytoaid.streamlit.app/)
+- Repository: [https://github.com/alisphd/phytoaid](https://github.com/alisphd/phytoaid)
+
+## Why This Project
+
+PhytoAid was built to combine plant pathology knowledge with practical software development in a way that is useful, explainable, and portfolio-ready. Instead of relying on a black-box model, the app uses transparent rules so users can understand why a disease was suggested.
+
+## Current Crop Coverage
+
+PhytoAid currently supports symptom-based diagnosis for:
+
+- Citrus
+- Tomato
+- Wheat
+- Rice
+- Maize
+- Sugarcane
+- Cotton
+
+## Key Features
+
+- Crop-specific diagnosis workflow
 - Plant-part-aware symptom filtering
-- Transparent rule-based disease ranking
-- Confidence scoring and severity estimation
+- Rule-based disease ranking with transparent scoring
+- Confidence score and severity estimation
 - Management recommendations grouped by cultural, chemical, and preventive actions
 - Searchable disease library
-- Local symptom reference gallery with cited crop photos
+- Local symptom reference gallery with cited crop images
 - Downloadable text summary report
+
+## How It Works
+
+1. The user selects a crop and affected plant part.
+2. The app filters symptom options relevant to that crop and plant part.
+3. Candidate diseases are matched against the selected symptoms.
+4. Each disease is scored using plant-part matches, key symptom matches, secondary symptom matches, and mismatch penalties.
+5. The system ranks the top likely diseases and shows a confidence score.
+6. Severity is estimated from the combined weight of the selected symptoms.
+
+## Example Diagnosis
+
+Example input:
+
+- Crop: `Citrus`
+- Plant part: `Leaf`
+- Symptoms: `Raised lesions`, `Yellow halo`, `Corky spots`
+
+Expected outcome:
+
+- Top suggestion: `Citrus canker`
+- Match confidence: high
+- Severity: moderate to high depending on the full symptom set
 
 ## Tech Stack
 
@@ -40,38 +90,19 @@ phytoaid/
 |   |-- helpers.py
 |   |-- recommendations.py
 |   |-- scoring.py
-|   `-- severity.py
+|   |-- severity.py
+|   `-- symptom_visuals.py
 |-- assets/
 |   |-- screenshots/
 |   `-- symptoms/
+|       |-- generated/
+|       |-- sources/
 |       `-- ATTRIBUTION.md
+|-- tools/
+|   `-- build_symptom_assets.py
 `-- docs/
     `-- notes.md
 ```
-
-## How It Works
-
-1. The app filters disease profiles by crop.
-2. It compares the selected plant part and symptoms with each disease profile.
-3. The scoring engine assigns:
-   - `+20` for a plant part match
-   - `+20` for each matched key symptom
-   - `+10` for each matched secondary symptom
-   - `-5` for each selected symptom not found in the disease profile
-4. Confidence is normalized as a percentage of the maximum possible score for that disease.
-5. Severity is estimated from symptom weights defined in `data/symptoms.json`.
-
-## Example Use Case
-
-- Crop: `Citrus`
-- Plant part: `Leaf`
-- Symptoms: `Raised lesions`, `Yellow halo`, `Corky spots`
-
-Expected outcome:
-
-- Top suggestion: `Citrus canker`
-- Confidence: high match
-- Severity: moderate to high depending on the full symptom set
 
 ## Run Locally
 
@@ -80,47 +111,11 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Publish And Deploy
+## Symptom Image System
 
-GitHub Pages cannot host this project because PhytoAid is a Python Streamlit app rather than a static website. The clean deployment flow is:
+PhytoAid includes a fully local symptom image pack. Each symptom card uses bundled local files under `assets/symptoms/` and shows a source credit directly in the app.
 
-1. Push this folder to its own GitHub repository.
-2. Deploy that repository on Streamlit Community Cloud.
-3. Streamlit will rebuild the app automatically whenever you push updates to GitHub.
-
-### Push To GitHub
-
-From the project folder:
-
-```bash
-git init -b main
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/<your-username>/phytoaid.git
-git push -u origin main
-```
-
-### Deploy On Streamlit Community Cloud
-
-1. Open [share.streamlit.io](https://share.streamlit.io/)
-2. Sign in with your GitHub account.
-3. Choose the repository you pushed.
-4. Set the main file path to `app.py`.
-5. Deploy the app.
-
-Recommended settings:
-
-- Repository: `phytoaid`
-- Branch: `main`
-- Main file path: `app.py`
-
-Once deployed, Streamlit will give you a public app URL that you can add to your CV and GitHub profile.
-
-## Adding Real Symptom Images
-
-PhytoAid now ships with a fully local symptom image pack. Every symptom card resolves to a bundled local file under `assets/symptoms/`, and each card shows its photo credit and source link directly under the image.
-
-To rebuild the local image pack after changing symptom sources, run:
+To rebuild the local symptom image pack after changing image sources, run:
 
 ```bash
 python tools/build_symptom_assets.py
@@ -128,26 +123,33 @@ python tools/build_symptom_assets.py
 
 This script:
 
-- downloads the curated source photos into `assets/symptoms/sources/`
-- generates crop-specific local symptom cards in `assets/symptoms/generated/`
-- rewrites `data/symptoms.json` so the app uses only local files
+- downloads curated source images into `assets/symptoms/sources/`
+- generates local crop-specific symptom cards in `assets/symptoms/generated/`
+- updates `data/symptoms.json` to point to local image files
 - refreshes `assets/symptoms/ATTRIBUTION.md`
 
-The current local source list is tracked in `assets/symptoms/ATTRIBUTION.md`.
+## Deployment
+
+PhytoAid is deployed on Streamlit Community Cloud:
+
+- Live app: [https://phytoaid.streamlit.app/](https://phytoaid.streamlit.app/)
+
+GitHub Pages is not suitable for this project because Streamlit apps require a Python backend rather than static site hosting.
+
+## Future Improvements
+
+- Add more crops and disease profiles relevant to Pakistan
+- Add real symptom photo packs for the newly added crops
+- Add image upload for visual assistance
+- Add bilingual English and Urdu support
+- Add weather-based disease risk alerts
+- Export PDF reports
 
 ## Disclaimer
 
 This tool provides preliminary disease suggestions based on user-selected symptoms and should not replace laboratory diagnosis, expert consultation, or official agricultural advisory services.
 
-## Future Improvements
-
-- Add image upload for visual assistance
-- Expand the dataset with more crops and local disease notes
-- Add bilingual English and Urdu support
-- Add weather-based disease risk alerts
-- Export PDF reports
-
 ## CV Description
 
 **PhytoAid - Plant Disease Diagnosis Helper Web App**  
-Developed a rule-based web application in Python and Streamlit for preliminary diagnosis of crop diseases using crop type, affected plant part, and visible symptom selection. Implemented symptom-based disease ranking, confidence scoring, severity estimation, and management recommendation modules for agricultural decision support.
+Developed and deployed a rule-based web application in Python and Streamlit for preliminary diagnosis of crop diseases using crop type, plant part, and visible symptom selection. Implemented symptom-based disease ranking, confidence scoring, severity estimation, management recommendation modules, and a cited local symptom image library for agricultural decision support.
