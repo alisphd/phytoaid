@@ -1,0 +1,182 @@
+[
+  {
+    "crop": "Citrus",
+    "disease_name": "Citrus canker",
+    "pathogen_type": "Bacterium",
+    "plant_parts": ["Leaf", "Fruit", "Stem"],
+    "key_symptoms": ["Raised lesions", "Yellow halo", "Corky spots"],
+    "secondary_symptoms": ["Leaf spots", "Fruit lesions", "Defoliation"],
+    "severity_clues": ["Defoliation", "Fruit lesions", "Multiple plant parts affected"],
+    "management": {
+      "cultural": ["Remove infected tissue", "Avoid splash spread", "Use healthy planting material"],
+      "chemical": ["Copper-based sprays where locally recommended"],
+      "preventive": ["Sanitize tools", "Regular orchard inspection"]
+    },
+    "short_description": "Produces raised corky lesions with yellow margins on leaves and fruits."
+  },
+  {
+    "crop": "Citrus",
+    "disease_name": "Greasy spot",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Leaf"],
+    "key_symptoms": ["Leaf spots", "Chlorosis", "Greasy blotches"],
+    "secondary_symptoms": ["Defoliation", "Necrosis"],
+    "severity_clues": ["Defoliation", "Heavy blotching"],
+    "management": {
+      "cultural": ["Remove fallen leaves", "Improve air circulation"],
+      "chemical": ["Apply fungicides where appropriate"],
+      "preventive": ["Maintain orchard sanitation"]
+    },
+    "short_description": "A fungal foliar disease often causing yellowing and leaf drop."
+  },
+  {
+    "crop": "Citrus",
+    "disease_name": "Gummosis",
+    "pathogen_type": "Oomycete/Fungus-like",
+    "plant_parts": ["Stem", "Root"],
+    "key_symptoms": ["Gum exudation", "Stem canker", "Collar rot"],
+    "secondary_symptoms": ["Bark cracking", "Wilting", "Chlorosis"],
+    "severity_clues": ["Wilting", "Stem canker", "Collar rot"],
+    "management": {
+      "cultural": ["Avoid trunk injury", "Improve drainage", "Remove infected bark where appropriate"],
+      "chemical": ["Use suitable fungicidal treatment where recommended"],
+      "preventive": ["Avoid waterlogging"]
+    },
+    "short_description": "Characterized by gum exudation and bark damage around the trunk or collar region."
+  },
+  {
+    "crop": "Citrus",
+    "disease_name": "Root rot",
+    "pathogen_type": "Oomycete/Fungus-like",
+    "plant_parts": ["Root", "Whole plant"],
+    "key_symptoms": ["Root decay", "Wilting", "Chlorosis"],
+    "secondary_symptoms": ["Stunted growth", "Patchy growth", "Defoliation"],
+    "severity_clues": ["Root decay", "Wilting", "Whole plant decline"],
+    "management": {
+      "cultural": ["Improve drainage", "Avoid over-irrigation"],
+      "chemical": ["Use registered root disease treatments where applicable"],
+      "preventive": ["Plant in well-drained soil"]
+    },
+    "short_description": "A root-associated disease leading to decline, chlorosis, and wilting."
+  },
+  {
+    "crop": "Tomato",
+    "disease_name": "Early blight",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Leaf", "Stem", "Fruit"],
+    "key_symptoms": ["Leaf spots", "Concentric rings", "Blighting"],
+    "secondary_symptoms": ["Necrosis", "Stem canker", "Fruit rot"],
+    "severity_clues": ["Blighting", "Fruit rot", "Concentric lesions"],
+    "management": {
+      "cultural": ["Remove infected debris", "Use crop rotation", "Avoid overhead watering"],
+      "chemical": ["Use fungicides where recommended"],
+      "preventive": ["Improve spacing and ventilation"]
+    },
+    "short_description": "Causes dark leaf lesions and progressive blighting of foliage."
+  },
+  {
+    "crop": "Tomato",
+    "disease_name": "Late blight",
+    "pathogen_type": "Oomycete/Fungus-like",
+    "plant_parts": ["Leaf", "Stem", "Fruit"],
+    "key_symptoms": ["Water-soaked lesions", "Blighting", "Mold growth"],
+    "secondary_symptoms": ["Rapid collapse", "Fruit rot", "Necrosis"],
+    "severity_clues": ["Rapid collapse", "Fruit rot"],
+    "management": {
+      "cultural": ["Remove infected plants", "Reduce leaf wetness", "Use healthy transplants"],
+      "chemical": ["Apply recommended protectant or systemic products where allowed"],
+      "preventive": ["Regular monitoring during humid weather"]
+    },
+    "short_description": "A fast-spreading disease with water-soaked lesions and blight symptoms."
+  },
+  {
+    "crop": "Tomato",
+    "disease_name": "Fusarium wilt",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Root", "Stem", "Whole plant"],
+    "key_symptoms": ["Wilting", "One-sided wilting", "Stunted growth"],
+    "secondary_symptoms": ["Chlorosis", "Vascular browning", "Necrosis"],
+    "severity_clues": ["Wilting", "Whole plant decline", "Vascular discoloration"],
+    "management": {
+      "cultural": ["Use resistant varieties", "Rotate crops", "Remove infected plants"],
+      "chemical": ["Limited direct control; soil management is important"],
+      "preventive": ["Use clean seedlings and soil hygiene"]
+    },
+    "short_description": "A vascular wilt causing yellowing, stunting, and plant collapse."
+  },
+  {
+    "crop": "Tomato",
+    "disease_name": "Bacterial spot",
+    "pathogen_type": "Bacterium",
+    "plant_parts": ["Leaf", "Stem", "Fruit"],
+    "key_symptoms": ["Leaf spots", "Water-soaked lesions", "Shot holes"],
+    "secondary_symptoms": ["Fruit lesions", "Necrosis"],
+    "severity_clues": ["Fruit lesions", "Heavy spotting"],
+    "management": {
+      "cultural": ["Use disease-free seed", "Avoid working in wet fields"],
+      "chemical": ["Copper-based bactericidal sprays where recommended"],
+      "preventive": ["Sanitize tools and trays"]
+    },
+    "short_description": "Produces spots on leaves and fruits, often favored by warm wet conditions."
+  },
+  {
+    "crop": "Wheat",
+    "disease_name": "Leaf rust",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Leaf"],
+    "key_symptoms": ["Rust pustules", "Chlorosis"],
+    "secondary_symptoms": ["Necrosis", "Patchy growth"],
+    "severity_clues": ["High pustule density", "Patchy spread"],
+    "management": {
+      "cultural": ["Use resistant cultivars", "Monitor fields regularly"],
+      "chemical": ["Use fungicides where threshold levels justify treatment"],
+      "preventive": ["Field surveillance during disease-favorable periods"]
+    },
+    "short_description": "A foliar disease with orange-brown pustules on leaf surfaces."
+  },
+  {
+    "crop": "Wheat",
+    "disease_name": "Powdery mildew",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Leaf", "Stem"],
+    "key_symptoms": ["Powdery growth", "White patches", "Leaf curling"],
+    "secondary_symptoms": ["Chlorosis", "Necrosis"],
+    "severity_clues": ["Dense powdery growth"],
+    "management": {
+      "cultural": ["Reduce excessive canopy humidity", "Use balanced fertilization"],
+      "chemical": ["Use fungicides where justified"],
+      "preventive": ["Choose tolerant cultivars"]
+    },
+    "short_description": "Characterized by white powder-like fungal growth on leaves and stems."
+  },
+  {
+    "crop": "Wheat",
+    "disease_name": "Common bunt",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Seed", "Whole plant"],
+    "key_symptoms": ["Seed discoloration", "Shriveled grain", "Stunted growth"],
+    "secondary_symptoms": ["Mold growth"],
+    "severity_clues": ["Seed damage", "Shriveled grain"],
+    "management": {
+      "cultural": ["Use clean seed", "Practice crop rotation"],
+      "chemical": ["Seed treatment fungicides where recommended"],
+      "preventive": ["Avoid contaminated seed lots"]
+    },
+    "short_description": "A seed-borne disease affecting grain quality and plant growth."
+  },
+  {
+    "crop": "Wheat",
+    "disease_name": "Root rot",
+    "pathogen_type": "Fungus complex",
+    "plant_parts": ["Root", "Whole plant"],
+    "key_symptoms": ["Root decay", "Stunted growth", "Patchy growth"],
+    "secondary_symptoms": ["Chlorosis", "Wilting"],
+    "severity_clues": ["Root decay", "Whole plant decline"],
+    "management": {
+      "cultural": ["Improve soil health", "Avoid continuous cereal cropping"],
+      "chemical": ["Use seed treatment where suitable"],
+      "preventive": ["Ensure proper drainage and crop rotation"]
+    },
+    "short_description": "Causes poor root health, reduced vigor, and stand decline."
+  }
+]

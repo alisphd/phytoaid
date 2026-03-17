@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Citrus",
+    "plant_parts": ["Leaf", "Stem", "Fruit", "Root", "Whole plant"]
+  },
+  {
+    "name": "Tomato",
+    "plant_parts": ["Leaf", "Stem", "Fruit", "Root", "Whole plant"]
+  },
+  {
+    "name": "Wheat",
+    "plant_parts": ["Leaf", "Stem", "Root", "Seed", "Whole plant"]
+  }
+]

@@ -1,0 +1,628 @@
+[
+  {
+    "name": "Yellow halo",
+    "slug": "yellow-halo",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "halo",
+    "description": "Circular lesions ringed by yellow tissue, often seen around infected spots.",
+    "image_file": "generated/citrus-yellow-halo.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "USDA Agricultural Research Service / Public domain",
+    "image_source_url": "https://commons.wikimedia.org/wiki/File:Citrus_canker_on_foliage.jpg"
+  },
+  {
+    "name": "Raised lesions",
+    "slug": "raised-lesions",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "lesions",
+    "description": "Slightly elevated rough lesions that feel corky or swollen on the surface.",
+    "image_file": "generated/citrus-raised-lesions.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "polaternez/citrus-diseases-detection",
+    "image_source_url": "https://raw.githubusercontent.com/polaternez/citrus-diseases-detection/master/flask_api/sample_images/canker0.jpg"
+  },
+  {
+    "name": "Leaf spots",
+    "slug": "leaf-spots",
+    "weight": 1,
+    "category": "mild",
+    "focus_area": "leaf",
+    "visual": "spots",
+    "description": "Small, distinct spots scattered across the leaf blade.",
+    "image_file": "generated/citrus-leaf-spots.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "polaternez/citrus-diseases-detection",
+    "image_source_url": "https://raw.githubusercontent.com/polaternez/citrus-diseases-detection/master/flask_api/sample_images/black_spot0.jpg",
+    "image_variants": [
+      {
+        "crop": "Tomato",
+        "image_file": "generated/tomato-leaf-spots.jpg",
+        "image_crops": [
+          "Tomato"
+        ],
+        "image_credit": "spMohanty/PlantVillage-Dataset",
+        "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Bacterial_spot/00416648-be6e-4bd4-bc8d-82f43f8a7240___GCREC_Bact.Sp%203110.JPG"
+      }
+    ]
+  },
+  {
+    "name": "Corky spots",
+    "slug": "corky-spots",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "fruit",
+    "visual": "corky",
+    "description": "Rough, hardened spots with a cork-like appearance.",
+    "image_file": "generated/citrus-corky-spots.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "USDA Agricultural Research Service / Public domain",
+    "image_source_url": "https://commons.wikimedia.org/wiki/File:Citrus_canker_on_fruit.jpg"
+  },
+  {
+    "name": "Defoliation",
+    "slug": "defoliation",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "whole_plant",
+    "visual": "defoliation",
+    "description": "Leaves are dropping from the plant, reducing canopy cover.",
+    "image_file": "generated/citrus-defoliation.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "polaternez/citrus-diseases-detection",
+    "image_source_url": "https://raw.githubusercontent.com/polaternez/citrus-diseases-detection/master/flask_api/sample_images/greening0.jpg"
+  },
+  {
+    "name": "Wilting",
+    "slug": "wilting",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "whole_plant",
+    "visual": "wilting",
+    "description": "Leaves or shoots droop because water movement in the plant is impaired.",
+    "image_file": "generated/citrus-wilting.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "polaternez/citrus-diseases-detection",
+    "image_source_url": "https://raw.githubusercontent.com/polaternez/citrus-diseases-detection/master/flask_api/sample_images/greening0.jpg",
+    "image_variants": [
+      {
+        "crop": "Tomato",
+        "image_file": "generated/tomato-wilting.jpg",
+        "image_crops": [
+          "Tomato"
+        ],
+        "image_credit": "spMohanty/PlantVillage-Dataset",
+        "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Tomato_Yellow_Leaf_Curl_Virus/00139ae8-d881-4edb-925f-46584b0bd68c___YLCV_NREC%202944.JPG"
+      },
+      {
+        "crop": "Wheat",
+        "image_file": "generated/wheat-wilting.jpg",
+        "image_crops": [
+          "Wheat"
+        ],
+        "image_credit": "aadium/wheat-disease-detection",
+        "image_source_url": "https://raw.githubusercontent.com/aadium/wheat-disease-detection/main/testCDD/crr_1.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Root decay",
+    "slug": "root-decay",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "root",
+    "visual": "decay",
+    "description": "Roots appear dark, soft, damaged, or partially decomposed.",
+    "image_file": "generated/citrus-root-decay.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "AKA MBG Archive / CC BY-SA 4.0",
+    "image_source_url": "https://commons.wikimedia.org/wiki/File:Chlorotic_lemon_tree_leaf_01.jpg",
+    "image_variants": [
+      {
+        "crop": "Wheat",
+        "image_file": "generated/wheat-root-decay.jpg",
+        "image_crops": [
+          "Wheat"
+        ],
+        "image_credit": "aadium/wheat-disease-detection",
+        "image_source_url": "https://raw.githubusercontent.com/aadium/wheat-disease-detection/main/testCDD/crr_1.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Gum exudation",
+    "slug": "gum-exudation",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "stem",
+    "visual": "gum",
+    "description": "Sticky amber gum oozes from the bark or stem tissue.",
+    "image_file": "generated/citrus-gum-exudation.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "polaternez/citrus-diseases-detection",
+    "image_source_url": "https://raw.githubusercontent.com/polaternez/citrus-diseases-detection/master/flask_api/sample_images/canker0.jpg"
+  },
+  {
+    "name": "Powdery growth",
+    "slug": "powdery-growth",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "powder",
+    "description": "A dusty white coating covers the leaf or stem surface.",
+    "image_file": "generated/wheat-powdery-growth.jpg",
+    "image_crops": [
+      "Wheat"
+    ],
+    "image_credit": "SWIN-SHARP/SWIN-SHARP",
+    "image_source_url": "https://raw.githubusercontent.com/SWIN-SHARP/SWIN-SHARP/main/WheatDiseases/test/4_Powdery_Mildew/1999.jpg"
+  },
+  {
+    "name": "Chlorosis",
+    "slug": "chlorosis",
+    "weight": 1,
+    "category": "mild",
+    "focus_area": "leaf",
+    "visual": "chlorosis",
+    "description": "Green tissue fades to pale yellow while veins may remain greener.",
+    "image_file": "generated/citrus-chlorosis.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "AKA MBG Archive / CC BY-SA 4.0",
+    "image_source_url": "https://commons.wikimedia.org/wiki/File:Chlorotic_lemon_tree_leaf_01.jpg",
+    "image_variants": [
+      {
+        "crop": "Tomato",
+        "image_file": "generated/tomato-chlorosis.jpg",
+        "image_crops": [
+          "Tomato"
+        ],
+        "image_credit": "spMohanty/PlantVillage-Dataset",
+        "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Leaf_Mold/00694db7-3327-45e0-b4da-a8bb7ab6a4b7___Crnl_L.Mold%206923.JPG"
+      },
+      {
+        "crop": "Wheat",
+        "image_file": "generated/wheat-chlorosis.jpg",
+        "image_crops": [
+          "Wheat"
+        ],
+        "image_credit": "SWIN-SHARP/SWIN-SHARP",
+        "image_source_url": "https://raw.githubusercontent.com/SWIN-SHARP/SWIN-SHARP/main/WheatDiseases/test/3_Yellow_Rust/147.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Necrosis",
+    "slug": "necrosis",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "necrosis",
+    "description": "Tissue dies and turns brown, black, or dry.",
+    "image_file": "generated/citrus-necrosis.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "polaternez/citrus-diseases-detection",
+    "image_source_url": "https://raw.githubusercontent.com/polaternez/citrus-diseases-detection/master/flask_api/sample_images/black_spot0.jpg",
+    "image_variants": [
+      {
+        "crop": "Tomato",
+        "image_file": "generated/tomato-necrosis.jpg",
+        "image_crops": [
+          "Tomato"
+        ],
+        "image_credit": "spMohanty/PlantVillage-Dataset",
+        "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Early_blight/0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B%208389.JPG"
+      },
+      {
+        "crop": "Wheat",
+        "image_file": "generated/wheat-necrosis.jpg",
+        "image_crops": [
+          "Wheat"
+        ],
+        "image_credit": "aadium/wheat-disease-detection",
+        "image_source_url": "https://raw.githubusercontent.com/aadium/wheat-disease-detection/main/testCDD/ls_1.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Blighting",
+    "slug": "blighting",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "blight",
+    "description": "Large areas of tissue rapidly become brown, scorched, and collapsed.",
+    "image_file": "generated/tomato-blighting.jpg",
+    "image_crops": [
+      "Tomato"
+    ],
+    "image_credit": "spMohanty/PlantVillage-Dataset",
+    "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Late_blight/0003faa8-4b27-4c65-bf42-6d9e352ca1a5___RS_Late.B%204946.JPG"
+  },
+  {
+    "name": "Water-soaked lesions",
+    "slug": "water-soaked-lesions",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "water-soaked",
+    "description": "Spots appear translucent, greasy, or wet before drying out.",
+    "image_file": "generated/tomato-water-soaked-lesions.jpg",
+    "image_crops": [
+      "Tomato"
+    ],
+    "image_credit": "spMohanty/PlantVillage-Dataset",
+    "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Late_blight/0003faa8-4b27-4c65-bf42-6d9e352ca1a5___RS_Late.B%204946.JPG"
+  },
+  {
+    "name": "Stem canker",
+    "slug": "stem-canker",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "stem",
+    "visual": "canker",
+    "description": "Sunken or cracked lesions form on stems, collars, or branches.",
+    "image_file": "generated/citrus-stem-canker.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "polaternez/citrus-diseases-detection",
+    "image_source_url": "https://raw.githubusercontent.com/polaternez/citrus-diseases-detection/master/flask_api/sample_images/canker0.jpg",
+    "image_variants": [
+      {
+        "crop": "Tomato",
+        "image_file": "generated/tomato-stem-canker.jpg",
+        "image_crops": [
+          "Tomato"
+        ],
+        "image_credit": "spMohanty/PlantVillage-Dataset",
+        "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Early_blight/0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B%208389.JPG"
+      }
+    ]
+  },
+  {
+    "name": "Fruit rot",
+    "slug": "fruit-rot",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "fruit",
+    "visual": "rot",
+    "description": "Fruit tissue softens, darkens, and breaks down.",
+    "image_file": "generated/tomato-fruit-rot.jpg",
+    "image_crops": [
+      "Tomato"
+    ],
+    "image_credit": "spMohanty/PlantVillage-Dataset",
+    "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Late_blight/0003faa8-4b27-4c65-bf42-6d9e352ca1a5___RS_Late.B%204946.JPG"
+  },
+  {
+    "name": "Mold growth",
+    "slug": "mold-growth",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "fruit",
+    "visual": "mold",
+    "description": "Fuzzy fungal growth forms on infected plant surfaces.",
+    "image_file": "generated/tomato-mold-growth.jpg",
+    "image_crops": [
+      "Tomato"
+    ],
+    "image_credit": "spMohanty/PlantVillage-Dataset",
+    "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Leaf_Mold/00694db7-3327-45e0-b4da-a8bb7ab6a4b7___Crnl_L.Mold%206923.JPG",
+    "image_variants": [
+      {
+        "crop": "Wheat",
+        "image_file": "generated/wheat-mold-growth.jpg",
+        "image_crops": [
+          "Wheat"
+        ],
+        "image_credit": "SWIN-SHARP/SWIN-SHARP",
+        "image_source_url": "https://raw.githubusercontent.com/SWIN-SHARP/SWIN-SHARP/main/WheatDiseases/test/5_Loose_Smut/17.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Rust pustules",
+    "slug": "rust-pustules",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "rust",
+    "description": "Powdery orange-brown pustules rupture through the leaf surface.",
+    "image_file": "generated/wheat-rust-pustules.jpg",
+    "image_crops": [
+      "Wheat"
+    ],
+    "image_credit": "SWIN-SHARP/SWIN-SHARP",
+    "image_source_url": "https://raw.githubusercontent.com/SWIN-SHARP/SWIN-SHARP/main/WheatDiseases/test/2_Brown_Rust/2.jpg"
+  },
+  {
+    "name": "White patches",
+    "slug": "white-patches",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "patch",
+    "description": "Irregular white patches spread over the surface of leaves or stems.",
+    "image_file": "generated/wheat-white-patches.jpg",
+    "image_crops": [
+      "Wheat"
+    ],
+    "image_credit": "SWIN-SHARP/SWIN-SHARP",
+    "image_source_url": "https://raw.githubusercontent.com/SWIN-SHARP/SWIN-SHARP/main/WheatDiseases/test/4_Powdery_Mildew/1999.jpg"
+  },
+  {
+    "name": "Stunted growth",
+    "slug": "stunted-growth",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "whole_plant",
+    "visual": "stunting",
+    "description": "Plants remain noticeably smaller and less vigorous than expected.",
+    "image_file": "generated/citrus-stunted-growth.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "polaternez/citrus-diseases-detection",
+    "image_source_url": "https://raw.githubusercontent.com/polaternez/citrus-diseases-detection/master/flask_api/sample_images/greening0.jpg",
+    "image_variants": [
+      {
+        "crop": "Tomato",
+        "image_file": "generated/tomato-stunted-growth.jpg",
+        "image_crops": [
+          "Tomato"
+        ],
+        "image_credit": "spMohanty/PlantVillage-Dataset",
+        "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Tomato_Yellow_Leaf_Curl_Virus/00139ae8-d881-4edb-925f-46584b0bd68c___YLCV_NREC%202944.JPG"
+      },
+      {
+        "crop": "Wheat",
+        "image_file": "generated/wheat-stunted-growth.jpg",
+        "image_crops": [
+          "Wheat"
+        ],
+        "image_credit": "aadium/wheat-disease-detection",
+        "image_source_url": "https://raw.githubusercontent.com/aadium/wheat-disease-detection/main/testCDD/crr_1.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Seed discoloration",
+    "slug": "seed-discoloration",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "seed",
+    "visual": "seed-discoloration",
+    "description": "Seeds or grains show abnormal darkening, staining, or off-colors.",
+    "image_file": "generated/wheat-seed-discoloration.jpg",
+    "image_crops": [
+      "Wheat"
+    ],
+    "image_credit": "SWIN-SHARP/SWIN-SHARP",
+    "image_source_url": "https://raw.githubusercontent.com/SWIN-SHARP/SWIN-SHARP/main/WheatDiseases/test/5_Loose_Smut/17.jpg"
+  },
+  {
+    "name": "Fruit lesions",
+    "slug": "fruit-lesions",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "fruit",
+    "visual": "fruit-lesion",
+    "description": "Distinct lesions or spots form directly on fruit tissue.",
+    "image_file": "generated/citrus-fruit-lesions.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "USDA Agricultural Research Service / Public domain",
+    "image_source_url": "https://commons.wikimedia.org/wiki/File:Citrus_canker_on_fruit.jpg",
+    "image_variants": [
+      {
+        "crop": "Tomato",
+        "image_file": "generated/tomato-fruit-lesions.jpg",
+        "image_crops": [
+          "Tomato"
+        ],
+        "image_credit": "spMohanty/PlantVillage-Dataset",
+        "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Bacterial_spot/00416648-be6e-4bd4-bc8d-82f43f8a7240___GCREC_Bact.Sp%203110.JPG"
+      }
+    ]
+  },
+  {
+    "name": "Greasy blotches",
+    "slug": "greasy-blotches",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "water-soaked",
+    "description": "Dark oily-looking blotches appear on the leaf surface, especially underneath.",
+    "image_file": "generated/citrus-greasy-blotches.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "polaternez/citrus-diseases-detection",
+    "image_source_url": "https://raw.githubusercontent.com/polaternez/citrus-diseases-detection/master/flask_api/sample_images/black_spot0.jpg"
+  },
+  {
+    "name": "Bark cracking",
+    "slug": "bark-cracking",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "stem",
+    "visual": "canker",
+    "description": "The bark surface splits or cracks around diseased stem tissue.",
+    "image_file": "generated/citrus-bark-cracking.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "polaternez/citrus-diseases-detection",
+    "image_source_url": "https://raw.githubusercontent.com/polaternez/citrus-diseases-detection/master/flask_api/sample_images/canker0.jpg"
+  },
+  {
+    "name": "Collar rot",
+    "slug": "collar-rot",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "stem",
+    "visual": "rot",
+    "description": "Dark rotting tissue develops around the collar or soil line.",
+    "image_file": "generated/citrus-collar-rot.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "polaternez/citrus-diseases-detection",
+    "image_source_url": "https://raw.githubusercontent.com/polaternez/citrus-diseases-detection/master/flask_api/sample_images/canker0.jpg"
+  },
+  {
+    "name": "Concentric rings",
+    "slug": "concentric-rings",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "rings",
+    "description": "Target-like lesions show distinct circular ring patterns.",
+    "image_file": "generated/tomato-concentric-rings.jpg",
+    "image_crops": [
+      "Tomato"
+    ],
+    "image_credit": "spMohanty/PlantVillage-Dataset",
+    "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Early_blight/0012b9d2-2130-4a06-a834-b1f3af34f57e___RS_Erly.B%208389.JPG"
+  },
+  {
+    "name": "One-sided wilting",
+    "slug": "one-sided-wilting",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "whole_plant",
+    "visual": "wilting",
+    "description": "Wilting begins on only one side of the plant or a single branch.",
+    "image_file": "generated/tomato-one-sided-wilting.jpg",
+    "image_crops": [
+      "Tomato"
+    ],
+    "image_credit": "spMohanty/PlantVillage-Dataset",
+    "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Tomato_Yellow_Leaf_Curl_Virus/00139ae8-d881-4edb-925f-46584b0bd68c___YLCV_NREC%202944.JPG"
+  },
+  {
+    "name": "Vascular browning",
+    "slug": "vascular-browning",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "stem",
+    "visual": "necrosis",
+    "description": "Internal stem or vascular tissue shows brown discoloration.",
+    "image_file": "generated/tomato-vascular-browning.jpg",
+    "image_crops": [
+      "Tomato"
+    ],
+    "image_credit": "spMohanty/PlantVillage-Dataset",
+    "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Tomato_Yellow_Leaf_Curl_Virus/00139ae8-d881-4edb-925f-46584b0bd68c___YLCV_NREC%202944.JPG"
+  },
+  {
+    "name": "Shot holes",
+    "slug": "shot-holes",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "spots",
+    "description": "Spots dry and fall out, leaving small holes through the leaf.",
+    "image_file": "generated/tomato-shot-holes.jpg",
+    "image_crops": [
+      "Tomato"
+    ],
+    "image_credit": "spMohanty/PlantVillage-Dataset",
+    "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Bacterial_spot/00416648-be6e-4bd4-bc8d-82f43f8a7240___GCREC_Bact.Sp%203110.JPG"
+  },
+  {
+    "name": "Leaf curling",
+    "slug": "leaf-curling",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "curl",
+    "description": "Leaf margins roll, curl upward, or twist out of their normal shape.",
+    "image_file": "generated/wheat-leaf-curling.jpg",
+    "image_crops": [
+      "Wheat"
+    ],
+    "image_credit": "SWIN-SHARP/SWIN-SHARP",
+    "image_source_url": "https://raw.githubusercontent.com/SWIN-SHARP/SWIN-SHARP/main/WheatDiseases/test/3_Yellow_Rust/147.jpg"
+  },
+  {
+    "name": "Rapid collapse",
+    "slug": "rapid-collapse",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "whole_plant",
+    "visual": "blight",
+    "description": "The plant or canopy deteriorates very quickly over a short period.",
+    "image_file": "generated/tomato-rapid-collapse.jpg",
+    "image_crops": [
+      "Tomato"
+    ],
+    "image_credit": "spMohanty/PlantVillage-Dataset",
+    "image_source_url": "https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato___Late_blight/0003faa8-4b27-4c65-bf42-6d9e352ca1a5___RS_Late.B%204946.JPG"
+  },
+  {
+    "name": "Shriveled grain",
+    "slug": "shriveled-grain",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "seed",
+    "visual": "seed-discoloration",
+    "description": "Grains appear undersized, shriveled, or poorly filled.",
+    "image_file": "generated/wheat-shriveled-grain.jpg",
+    "image_crops": [
+      "Wheat"
+    ],
+    "image_credit": "SWIN-SHARP/SWIN-SHARP",
+    "image_source_url": "https://raw.githubusercontent.com/SWIN-SHARP/SWIN-SHARP/main/WheatDiseases/test/5_Loose_Smut/17.jpg"
+  },
+  {
+    "name": "Patchy growth",
+    "slug": "patchy-growth",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "whole_plant",
+    "visual": "stunting",
+    "description": "Uneven patches of weak or slow-growing plants develop in the field.",
+    "image_file": "generated/citrus-patchy-growth.jpg",
+    "image_crops": [
+      "Citrus"
+    ],
+    "image_credit": "polaternez/citrus-diseases-detection",
+    "image_source_url": "https://raw.githubusercontent.com/polaternez/citrus-diseases-detection/master/flask_api/sample_images/greening0.jpg",
+    "image_variants": [
+      {
+        "crop": "Wheat",
+        "image_file": "generated/wheat-patchy-growth.jpg",
+        "image_crops": [
+          "Wheat"
+        ],
+        "image_credit": "SWIN-SHARP/SWIN-SHARP",
+        "image_source_url": "https://raw.githubusercontent.com/SWIN-SHARP/SWIN-SHARP/main/WheatDiseases/test/3_Yellow_Rust/147.jpg"
+      }
+    ]
+  }
+]

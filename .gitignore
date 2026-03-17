@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.streamlit/
+.pytest_cache/
+dist/
+build/
+*.log
+streamlit*.out.log
+streamlit*.err.log
+.tmp/
