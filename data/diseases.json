@@ -178,5 +178,245 @@
       "preventive": ["Ensure proper drainage and crop rotation"]
     },
     "short_description": "Causes poor root health, reduced vigor, and stand decline."
+  },
+  {
+    "crop": "Rice",
+    "disease_name": "Rice blast",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Leaf", "Stem", "Panicle"],
+    "key_symptoms": ["Spindle lesions", "Leaf spots", "Blighting"],
+    "secondary_symptoms": ["Necrosis", "Stunted growth"],
+    "severity_clues": ["Panicle infection", "Heavy blighting"],
+    "management": {
+      "cultural": ["Use balanced nitrogen", "Remove infected residue", "Avoid dense susceptible stands"],
+      "chemical": ["Use registered fungicides where blast risk is high"],
+      "preventive": ["Use tolerant varieties and monitor during humid weather"]
+    },
+    "short_description": "A destructive fungal disease causing spindle-shaped lesions and panicle damage."
+  },
+  {
+    "crop": "Rice",
+    "disease_name": "Bacterial leaf blight",
+    "pathogen_type": "Bacterium",
+    "plant_parts": ["Leaf", "Whole plant"],
+    "key_symptoms": ["Leaf streaks", "Blighting", "Chlorosis"],
+    "secondary_symptoms": ["Wilting", "Necrosis"],
+    "severity_clues": ["Leaf drying", "Wilting"],
+    "management": {
+      "cultural": ["Avoid excessive nitrogen", "Improve field sanitation", "Use clean seed and nursery practices"],
+      "chemical": ["Bactericidal options are limited and should follow local guidance"],
+      "preventive": ["Use resistant varieties and avoid moving contaminated water between fields"]
+    },
+    "short_description": "Causes long water-soaked streaks that expand into yellowing and leaf drying."
+  },
+  {
+    "crop": "Rice",
+    "disease_name": "Sheath blight",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Stem", "Leaf"],
+    "key_symptoms": ["Sheath lesions", "Blighting", "Mold growth"],
+    "secondary_symptoms": ["Leaf spots", "Stunted growth"],
+    "severity_clues": ["Sheath infection", "Canopy blight"],
+    "management": {
+      "cultural": ["Reduce excessive canopy humidity", "Manage crop residue", "Maintain proper plant spacing"],
+      "chemical": ["Use fungicides where disease pressure justifies treatment"],
+      "preventive": ["Monitor lower canopy early in the season"]
+    },
+    "short_description": "Produces lesions on sheaths that spread upward and cause lodging-related losses."
+  },
+  {
+    "crop": "Rice",
+    "disease_name": "Brown spot",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Leaf", "Panicle"],
+    "key_symptoms": ["Leaf spots", "Oval lesions", "Necrosis"],
+    "secondary_symptoms": ["Chlorosis", "Seed discoloration"],
+    "severity_clues": ["Heavy spotting", "Grain infection"],
+    "management": {
+      "cultural": ["Improve crop nutrition", "Use clean seed", "Avoid drought stress where possible"],
+      "chemical": ["Use seed treatment or foliar fungicides where locally recommended"],
+      "preventive": ["Maintain balanced fertility and resistant cultivars"]
+    },
+    "short_description": "A common foliar disease causing brown oval lesions and poor grain filling."
+  },
+  {
+    "crop": "Maize",
+    "disease_name": "Common rust",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Leaf"],
+    "key_symptoms": ["Rust pustules", "Chlorosis"],
+    "secondary_symptoms": ["Necrosis", "Patchy growth"],
+    "severity_clues": ["High pustule density"],
+    "management": {
+      "cultural": ["Plant resistant hybrids", "Monitor fields regularly"],
+      "chemical": ["Use fungicides when disease reaches economic thresholds"],
+      "preventive": ["Use timely scouting during cool humid periods"]
+    },
+    "short_description": "Shows cinnamon-brown pustules on leaves and can reduce grain filling under heavy pressure."
+  },
+  {
+    "crop": "Maize",
+    "disease_name": "Northern leaf blight",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Leaf"],
+    "key_symptoms": ["Leaf streaks", "Blighting", "Necrosis"],
+    "secondary_symptoms": ["Chlorosis", "Stunted growth"],
+    "severity_clues": ["Extensive leaf blight"],
+    "management": {
+      "cultural": ["Use crop rotation", "Manage infected residue", "Grow resistant hybrids"],
+      "chemical": ["Apply fungicides where disease severity and growth stage justify treatment"],
+      "preventive": ["Scout during prolonged humid conditions"]
+    },
+    "short_description": "Causes long gray-green lesions that expand and destroy large leaf areas."
+  },
+  {
+    "crop": "Maize",
+    "disease_name": "Downy mildew",
+    "pathogen_type": "Oomycete/Fungus-like",
+    "plant_parts": ["Leaf", "Whole plant"],
+    "key_symptoms": ["Striped leaves", "White patches", "Stunted growth"],
+    "secondary_symptoms": ["Chlorosis", "Leaf curling"],
+    "severity_clues": ["Systemic striping", "Severe stunting"],
+    "management": {
+      "cultural": ["Remove heavily diseased plants", "Control volunteer hosts", "Use healthy seed"],
+      "chemical": ["Use seed treatment or registered systemic products where appropriate"],
+      "preventive": ["Choose resistant hybrids in affected areas"]
+    },
+    "short_description": "A systemic disease causing pale striping, downy growth, and severe stunting."
+  },
+  {
+    "crop": "Maize",
+    "disease_name": "Stalk rot",
+    "pathogen_type": "Fungus complex",
+    "plant_parts": ["Stem", "Root", "Whole plant"],
+    "key_symptoms": ["Wilting", "Root decay", "Vascular browning"],
+    "secondary_symptoms": ["Stunted growth", "Patchy growth"],
+    "severity_clues": ["Stalk collapse", "Root decline"],
+    "management": {
+      "cultural": ["Avoid plant stress", "Improve field drainage", "Rotate with non-host crops"],
+      "chemical": ["Direct chemical control is limited; focus on prevention"],
+      "preventive": ["Use tolerant hybrids and balanced fertility"]
+    },
+    "short_description": "Weakens roots and stalks, leading to lodging, wilt, and poor stand vigor."
+  },
+  {
+    "crop": "Sugarcane",
+    "disease_name": "Red rot",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Stem", "Whole plant"],
+    "key_symptoms": ["Red internal rot", "Wilting", "Chlorosis"],
+    "secondary_symptoms": ["Mold growth", "Stunted growth"],
+    "severity_clues": ["Internal stalk rot", "Top drying"],
+    "management": {
+      "cultural": ["Remove infected clumps", "Use healthy setts", "Avoid ratooning diseased fields"],
+      "chemical": ["Treat seed cane where locally recommended"],
+      "preventive": ["Plant resistant varieties and maintain field hygiene"]
+    },
+    "short_description": "A serious stalk disease causing internal reddening, drying, and cane collapse."
+  },
+  {
+    "crop": "Sugarcane",
+    "disease_name": "Smut",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Stem", "Whole plant"],
+    "key_symptoms": ["Whip-like growth", "Stunted growth", "Patchy growth"],
+    "secondary_symptoms": ["Chlorosis"],
+    "severity_clues": ["Whip emergence", "Poor tillering"],
+    "management": {
+      "cultural": ["Rogue infected stools", "Use healthy seed cane", "Avoid ratooning diseased crops"],
+      "chemical": ["Use sett treatment where locally advised"],
+      "preventive": ["Grow resistant varieties and sanitize planting material"]
+    },
+    "short_description": "Recognized by black whip-like structures emerging from shoots and severe stand reduction."
+  },
+  {
+    "crop": "Sugarcane",
+    "disease_name": "Pokkah boeng",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Leaf", "Stem"],
+    "key_symptoms": ["Leaf curling", "Twisted top", "Chlorosis"],
+    "secondary_symptoms": ["Necrosis", "Blighting"],
+    "severity_clues": ["Top distortion", "Leaf death"],
+    "management": {
+      "cultural": ["Remove badly affected tops", "Improve field sanitation", "Maintain balanced nutrition"],
+      "chemical": ["Use fungicidal sprays where disease pressure is significant"],
+      "preventive": ["Monitor young cane during humid weather"]
+    },
+    "short_description": "Distorts the spindle and top leaves, causing twisting, chlorosis, and blight."
+  },
+  {
+    "crop": "Sugarcane",
+    "disease_name": "Sugarcane mosaic",
+    "pathogen_type": "Virus",
+    "plant_parts": ["Leaf", "Whole plant"],
+    "key_symptoms": ["Mosaic pattern", "Chlorosis", "Stunted growth"],
+    "secondary_symptoms": ["Striped leaves", "Leaf curling"],
+    "severity_clues": ["Severe mottling", "Growth suppression"],
+    "management": {
+      "cultural": ["Remove infected clumps", "Control alternate hosts", "Use clean planting material"],
+      "chemical": ["No direct curative chemical control; manage vectors where applicable"],
+      "preventive": ["Use resistant varieties and virus-free setts"]
+    },
+    "short_description": "Causes mottled chlorotic patterns on leaves and reduces vigor and cane yield."
+  },
+  {
+    "crop": "Cotton",
+    "disease_name": "Cotton leaf curl disease",
+    "pathogen_type": "Virus",
+    "plant_parts": ["Leaf", "Whole plant"],
+    "key_symptoms": ["Leaf curling", "Mosaic pattern", "Vein thickening"],
+    "secondary_symptoms": ["Stunted growth", "Chlorosis"],
+    "severity_clues": ["Severe curling", "Plant stunting"],
+    "management": {
+      "cultural": ["Remove volunteer hosts", "Rogue heavily infected plants", "Maintain field sanitation"],
+      "chemical": ["Manage whitefly vectors according to local recommendations"],
+      "preventive": ["Use tolerant varieties and timely sowing"]
+    },
+    "short_description": "A major viral disease causing curling, vein thickening, and reduced plant growth."
+  },
+  {
+    "crop": "Cotton",
+    "disease_name": "Bacterial blight",
+    "pathogen_type": "Bacterium",
+    "plant_parts": ["Leaf", "Stem", "Boll"],
+    "key_symptoms": ["Angular lesions", "Water-soaked lesions", "Leaf spots"],
+    "secondary_symptoms": ["Shot holes", "Boll rot", "Necrosis"],
+    "severity_clues": ["Boll infection", "Heavy blight"],
+    "management": {
+      "cultural": ["Use acid-delinted clean seed", "Destroy crop residue", "Avoid field work when foliage is wet"],
+      "chemical": ["Copper-based products may help where locally recommended"],
+      "preventive": ["Use resistant varieties and seed treatment"]
+    },
+    "short_description": "Produces angular leaf lesions, black arm symptoms, and boll infection in severe cases."
+  },
+  {
+    "crop": "Cotton",
+    "disease_name": "Fusarium wilt",
+    "pathogen_type": "Fungus",
+    "plant_parts": ["Root", "Stem", "Whole plant"],
+    "key_symptoms": ["Wilting", "One-sided wilting", "Vascular browning"],
+    "secondary_symptoms": ["Chlorosis", "Stunted growth"],
+    "severity_clues": ["Whole plant decline", "Vascular discoloration"],
+    "management": {
+      "cultural": ["Improve soil drainage", "Remove infected plants", "Rotate away from susceptible hosts where possible"],
+      "chemical": ["Direct chemical control is limited; focus on preventive soil and seed practices"],
+      "preventive": ["Use tolerant varieties and healthy seed"]
+    },
+    "short_description": "A vascular wilt that causes yellowing, one-sided wilt, and internal stem browning."
+  },
+  {
+    "crop": "Cotton",
+    "disease_name": "Boll rot",
+    "pathogen_type": "Fungus complex",
+    "plant_parts": ["Boll", "Leaf"],
+    "key_symptoms": ["Boll rot", "Mold growth", "Necrosis"],
+    "secondary_symptoms": ["Water-soaked lesions", "Leaf spots"],
+    "severity_clues": ["Boll damage", "Rot spread"],
+    "management": {
+      "cultural": ["Improve canopy ventilation", "Avoid excessive irrigation near boll opening", "Remove severely rotted bolls"],
+      "chemical": ["Use fungicides or protectants where locally justified"],
+      "preventive": ["Reduce insect injury and maintain clean field conditions"]
+    },
+    "short_description": "Rots developing bolls, often with fungal growth and darkening of infected tissue."
   }
 ]

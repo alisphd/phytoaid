@@ -4,7 +4,7 @@ PhytoAid is a rule-based Streamlit application for preliminary plant disease dia
 
 ## Features
 
-- Crop selection for citrus, tomato, and wheat
+- Crop selection for citrus, tomato, wheat, rice, maize, sugarcane, and cotton
 - Plant-part-aware symptom filtering
 - Transparent rule-based disease ranking
 - Confidence scoring and severity estimation

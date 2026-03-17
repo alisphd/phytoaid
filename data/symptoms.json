@@ -624,5 +624,113 @@
         "image_source_url": "https://raw.githubusercontent.com/SWIN-SHARP/SWIN-SHARP/main/WheatDiseases/test/3_Yellow_Rust/147.jpg"
       }
     ]
+  },
+  {
+    "name": "Leaf streaks",
+    "slug": "leaf-streaks",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "blight",
+    "description": "Long narrow streaks extend along the leaf blade or between veins."
+  },
+  {
+    "name": "Spindle lesions",
+    "slug": "spindle-lesions",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "lesions",
+    "description": "Lesions are elongated with tapered ends, giving a spindle-like shape."
+  },
+  {
+    "name": "Sheath lesions",
+    "slug": "sheath-lesions",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "stem",
+    "visual": "lesions",
+    "description": "Distinct lesions form on the sheath or lower stem tissue."
+  },
+  {
+    "name": "Oval lesions",
+    "slug": "oval-lesions",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "spots",
+    "description": "Lesions appear rounded to oval and are often surrounded by darker margins."
+  },
+  {
+    "name": "Striped leaves",
+    "slug": "striped-leaves",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "patch",
+    "description": "Parallel yellow or pale stripes run lengthwise across the leaves."
+  },
+  {
+    "name": "Whip-like growth",
+    "slug": "whip-like-growth",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "stem",
+    "visual": "stunting",
+    "description": "A long whip-like structure emerges from the growing point or stem."
+  },
+  {
+    "name": "Red internal rot",
+    "slug": "red-internal-rot",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "stem",
+    "visual": "rot",
+    "description": "Internal stem tissue shows reddish discoloration and decay."
+  },
+  {
+    "name": "Twisted top",
+    "slug": "twisted-top",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "curl",
+    "description": "Young top leaves become twisted, distorted, or malformed."
+  },
+  {
+    "name": "Mosaic pattern",
+    "slug": "mosaic-pattern",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "patch",
+    "description": "Leaves show alternating light and dark green patches in a mosaic pattern."
+  },
+  {
+    "name": "Vein thickening",
+    "slug": "vein-thickening",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "patch",
+    "description": "Leaf veins become swollen, more prominent, or abnormally thickened."
+  },
+  {
+    "name": "Angular lesions",
+    "slug": "angular-lesions",
+    "weight": 2,
+    "category": "moderate",
+    "focus_area": "leaf",
+    "visual": "spots",
+    "description": "Spots are restricted by veins and take on an angular or blocky shape."
+  },
+  {
+    "name": "Boll rot",
+    "slug": "boll-rot",
+    "weight": 3,
+    "category": "severe",
+    "focus_area": "fruit",
+    "visual": "rot",
+    "description": "Cotton bolls darken, soften, and rot before proper opening."
   }
 ]

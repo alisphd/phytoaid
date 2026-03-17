@@ -10,5 +10,21 @@
   {
     "name": "Wheat",
     "plant_parts": ["Leaf", "Stem", "Root", "Seed", "Whole plant"]
+  },
+  {
+    "name": "Rice",
+    "plant_parts": ["Leaf", "Stem", "Panicle", "Whole plant"]
+  },
+  {
+    "name": "Maize",
+    "plant_parts": ["Leaf", "Stem", "Root", "Ear", "Whole plant"]
+  },
+  {
+    "name": "Sugarcane",
+    "plant_parts": ["Leaf", "Stem", "Root", "Whole plant"]
+  },
+  {
+    "name": "Cotton",
+    "plant_parts": ["Leaf", "Stem", "Root", "Boll", "Whole plant"]
   }
 ]
